@@ -32,8 +32,8 @@ const Hero = () => {
                 <h1 className="md:mt-24 lg:mt-28 sm:mt-10 relative z-2 text-[18px] md:text-[px] max-sm:leading-[60px] max-md:leading-[80px] lg:text-[25px] font-normal text-white">Pioneers of</h1>
                 <h1 className="md:mt-0 lg:mt-0 sm:mt-0  mt-0  relative z-2 max-md:mb-5 text-[48px] md:text-[72px] 
                 max-sm:leading-[60px] max-md:leading-[90px] uppercase lg:text-[80px] tracking-widest font-[800] text-white">Progress</h1>
-                <p className="relative z-1 text-[19px] md:text-[28px]  lg:text-[22px] leading-[30px] md:leading-[36px] lg:leading-[30px] mb-5 md:mb-12 md:10/12 lg:w-8/12 text-[#7d8590]">
-                we&apos;re not just a technology company; we&apos;re pioneers of progress. With expertise spanning AI, finance, aerospace, electronics, and software development, we&apos;re dedicated to shaping the future through innovation.
+                <p className=" font-[500] relative z-1 text-[19px] md:text-[28px]  lg:text-[22px] leading-[30px] md:leading-[36px] lg:leading-[30px] mb-5 md:mb-12 md:10/12 lg:w-8/12 text-[white]">
+                we&apos;re not just a technology company, we&apos;re dedicated to shaping the future through innovation. With expertise spanning AI, finance, aerospace, electronics, and software development.
                 </p>
                 <div className='flex lg:w-11/12 max-md:flex-col'>
                 <a onMouseEnter={() => setHovered1(true)} onMouseLeave={() => setHovered1(false)} href="#" className='flex items-center w-full md:w-auto justify-center text-[16px] py-3 px-5 max-md:mt-4 rounded-md border-[#ae88f9] border-[1.5px] text-white'>
