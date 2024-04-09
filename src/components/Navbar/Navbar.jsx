@@ -31,32 +31,32 @@ const Navbar = () => {
                     <div className='flex max-lg:flex-col lg:items-center max-sm:w-10/12 max-sm:mx-auto sm:ml-auto max-lg:w-[320px] lg:w-full max-lg:max-h-[500px] overflow-y-auto lg:mb-0 max-lg:bg-white max-lg:rounded-lg lg:justify-between'>
                         <nav className='mt-0 px-3 lg:px-6 text-[15.5px] mb-0 max-lg:py-10 max-lg:px-5'>
                             <ul className='flex lg:items-center lg:space-x-5 max-lg:flex-col max-lg:text-neutral-700 max-lg:text-xl 
-                            max-lg:font-medium font-semibold tracking-wide max-lg:space-y-6 max-lg:h-auto overflow-y-auto'>
-                                <li>
+                            max-lg:font-medium  font-semibold tracking-wide max-lg:space-y-6 max-lg:h-auto overflow-y-auto'>
+                                <li className='uppercase'>
                                     <span>
                                         <a href='#'>Home</a>
                                     </span>
                                 </li>
-                                <li>
+                                <li  className='uppercase'>
                                     <span>
                                         <a href='#'>About Us</a>
                                     </span>
                                 </li>
-                                <li>
+                                <li  className='uppercase'>
                                     <span>
                                         <a href='#'>Team</a>
                                     </span>
                                 </li>
                                 <ProductNav/>
                                 {/* <SolutionNav/> */}
-                                <li>
+                                <li  className='uppercase'>
                                     <span>
                                         <a href='#'>Contact Us</a>
                                     </span>
                                 </li>
                             </ul>
                         </nav>
-                        <div className='lg:flex items-center max-lg:flex-col lg:px-0 px-3 mb-3 lg:mb-0 text-left lg:space-x-4'>
+                        <div className='lg:flex items-center max-lg:flex-col lg:px-0 px-3 mb-3 lg:mb-0 text-left lg:space-x-4 uppercase'>
                         
                         <a onMouseEnter={() => setHovered1(true)} onMouseLeave={() => setHovered1(false)} href="" className='flex items-center w-full md:w-auto justify-center text-[16px] py-3 px-5 max-md:mt-4 rounded-md border-[#ae88f9] border-[1.5px] text-white'>
                     Get in Touch

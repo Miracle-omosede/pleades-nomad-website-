@@ -27,6 +27,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* cursor pointer animation */}
+      <div className="w-[32px] h-[32px] bg-[red] fixed top-0 left-0 pointer-events-none z-50"></div>
     </div>
   );
 }
