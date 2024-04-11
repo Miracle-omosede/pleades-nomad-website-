@@ -7,6 +7,8 @@ import Navbar from "@/components/Navbar/Navbar";
 import Productivity from "@/components/Productivity/Productivity";
 import { useContext } from "react";
 import {motion} from "framer-motion";
+import Security from "@/components/Security/Security";
+import Globe from "@/components/Footer/Globe";
 
 export default function Home() {
   const{ cursorVariants, cursorBG } = useContext( CursorContext );
@@ -25,12 +27,17 @@ export default function Home() {
             <Hero/>
           
           </div>
+            <div id='security' className='home-campaign-productivity px-4 pt-8 pb-16 overflow-hidden'>
+            <Security/>
+          </div> 
           <div id='productivity' className='home-campaign-productivity px-4 pt-8 overflow-hidden'>
             <Productivity/>
           </div>
           <div id='collaboration' className='home-campaign-productivity px-4 pt-8  overflow-hidden'>
             <Collaboration/>
           </div>
+       
+          <Globe/>
         </div>
       </div>
       {/* cursor pointer animation */}
