@@ -86,22 +86,24 @@ const Discount = () => {
               className=' text-4xl text-white font-bold'
               
             >
-              <motion.span variants={item}>D</motion.span>
-              <motion.span variants={item}>e</motion.span>
-              <motion.span variants={item}>s</motion.span>
-              <motion.span variants={item}>i</motion.span>
-              <motion.span variants={item}>g</motion.span>
+              <motion.span variants={item}>I</motion.span>
               <motion.span variants={item}>n</motion.span>
-              <motion.span variants={item}> </motion.span>
-              <motion.span variants={item}>s</motion.span>
+              <motion.span variants={item}>n</motion.span>
               <motion.span variants={item}>o</motion.span>
-              <motion.span variants={item}>m</motion.span>
-              <motion.span variants={item}>e</motion.span>
+              <motion.span variants={item}>v</motion.span>
+              <motion.span variants={item}>a</motion.span>
               <motion.span variants={item}>t</motion.span>
-              <motion.span variants={item}>h</motion.span>
               <motion.span variants={item}>i</motion.span>
+              <motion.span variants={item}>v</motion.span>
+              <motion.span variants={item}>e</motion.span>
+              <motion.span variants={item}></motion.span>
+              <motion.span variants={item}>I</motion.span>
               <motion.span variants={item}>n</motion.span>
+              <motion.span variants={item}>s</motion.span>
+              <motion.span variants={item}>i</motion.span>
               <motion.span variants={item}>g</motion.span>
+              <motion.span variants={item}>h</motion.span>
+              <motion.span variants={item}>t</motion.span>
             </motion.p>
           </motion.div>
         </div>
@@ -113,10 +115,9 @@ const Discount = () => {
             >
               <h2 className='mb-4 text-2xl max-lg:text-[20px] max-md:w-10/12 lg:w-full w-full text-[#7d8590]'>
                 <span className='font-semibold text-white'>
-                  GitHub Issues and GitHub Projects
+                Unlock the power
                 </span>{' '}
-                supply flexible project management tools that adapt to your
-                team alongside your code.
+                of data science in your operations.
               </h2>
               <a
                 onMouseEnter={() => setHovered(true)}
@@ -124,7 +125,7 @@ const Discount = () => {
                 href=''
                 className='py-1 inline-block text-xl text-white font-semibold'
               >
-                Explore GitHub Issue
+                Get Started
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className={` mb-[2px] text-white transition inline-block ml-3 ease-in duration-300  ${
@@ -188,13 +189,13 @@ const Discount = () => {
         >
           <div className='py-4 text-left'>
             <div className='z-[1] inline-block rounded-full px-2 border-2 border-[#ffc2b2] relative font-medium bg-gradient-to-r from-[#ffa28b] to-[#ffc2b2] bg-clip-text text-transparent'>
-              <span className='font-semibold text-[12px]'>Did you know?</span>
+              <span className='font-semibold text-[12px]'>Insightful analysis</span>
             </div>
             <h3 className='text-[#ffa28b] mb-2 mt-3 lg:text-6xl md:text-5xl text-3xl font-medium'>
-              80% reduction
+            90% success
             </h3>
             <p className='mb-3 md:text-xl text-base font-medium text-white'>
-              in onboarding time with GitHub<sup>1</sup>
+            precision-driven results.
             </p>
           </div>
         </motion.div>
