@@ -1,9 +1,15 @@
+"use client"
+
 import Collaboration from "@/components/Collaboration/Collaboration";
+import { CursorContext } from "@/components/CursorContext";
 import Hero from "@/components/Hero-Section/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 import Productivity from "@/components/Productivity/Productivity";
+import { useContext } from "react";
+import {motion} from "framer-motion";
 
 export default function Home() {
+  const{ cursorVariants, cursorBG } = useContext( CursorContext );
   return (
     <div>
 
@@ -28,7 +34,8 @@ export default function Home() {
         </div>
       </div>
       {/* cursor pointer animation */}
-      <div className="w-[32px] h-[32px] bg-[red] fixed top-0 left-0 pointer-events-none z-50"></div>
+      <motion.div variants={cursorVariants}
+      animate={cursorBG} className="w-[32px] h-[32px] bg-[red] fixed top-0 left-0 pointer-events-none z-50 rounded-full"></motion.div>
     </div>
   );
 }

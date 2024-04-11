@@ -1,12 +1,15 @@
 "use client"
 import Container from '@/app/Container'
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import ProductNav from "../Navbar/ProductNav"
 import SolutionNav from './SolutionNav'
+
+import { CursorContext } from '../CursorContext'
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false)
     const [hovered1, setHovered1] = useState(false)
+    const {mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext)
   return (
     <Container>
         <div className='text-white py-5 relative flex w-full container-items'>
@@ -18,7 +21,7 @@ const Navbar = () => {
                     <a href="www.deltaquad.com" className='cursor-pointer text-[1.5rem] font-semibold uppercase flex flex-col'>
                         Logo
                     </a>
-                    <button type='button' className='lg:hidden block'  onClick={() => setShowNav(!showNav)}>
+                    <button onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} type='button' className='lg:hidden block'  onClick={() => setShowNav(!showNav)}>
                         <div className={`w-[23px] h-[2px] transition ease-in duration-150 bg-white mb-1 ${showNav ? "rotate-45 mb-0 translate-y-[5px]" : "rotate-0 mb-1"}`}></div>
                         <div className={`w-[23px] h-[2px] transition ease-in duration-150 bg-white mb-1 
                         ${ showNav ? "hidden mb-0" : "mb-1"}`}></div>
