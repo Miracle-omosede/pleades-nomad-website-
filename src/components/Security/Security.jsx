@@ -42,7 +42,7 @@ const Security = () => {
                 <h2 className="text-[20px] md:text-2xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '200ms'}}>Our Expertise</h2>  
                 <h3 className="text-[28px] md:text-[40px] max-md:leading-8 max-lg:leading-10 lg:text-5xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '300ms'}}>
                     <p className="text-[#939aff]">Artificial Intelligence Innovation and Research</p>
-                    Advancing the future with pioneering AI solutions.
+                    Advancing the future with AI powered solutions.
                 </h3>
             </motion.div>
         </motion.div>
@@ -60,7 +60,8 @@ const Security = () => {
         <div className='flex flex-col md:flex-row gap-10 '>
                 <HoverCard backgroundColor = '#939aff' direction='flex-row' left='-400px'>
                     <div className='md:flex flex-col  flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32 ' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
-                        <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>Cutting-Edge</span>Developments of So </p>
+                        <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>Training AI systems </span>
+to comprehend operations and identify flaws and abnormalities across diverse sectors. </p>
                         <div>
                             <a onMouseEnter={() => setHovered2(true)} onMouseLeave={() => setHovered2(false)} href="" className='py-1 inline-block text-xl text-white font-semibold'>
                             Read More
