@@ -35,7 +35,7 @@ const Productivity = (props) => {
             <div className='flex justify-between md:space-x-10 max-md:flex-col'>
                 <HoverCard backgroundColor='#7ee787' direction='flex-row' left='0'>
                     <div className='md:flex flex-col flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32 ' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} >
-                        <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>Innovative</span>  software development strategies.</p>
+                        <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>Innovative</span>  software development strategies with pixel perfect Web or Native App designs for Mobile, Tablet or Desktop Devices.  </p>
                         <div>
                             <a onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} href="" className=' md:text-xl text-white font-semibold inline-block'>
                             Explore More
