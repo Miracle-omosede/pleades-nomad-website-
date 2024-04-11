@@ -24,7 +24,14 @@ const Footer = () => {
 
             <div className='flex flex-col w-full justify-between gap-2'>
             <div className='text-white'  onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} >
-                <h2 className='mt-6 font-semibold'>Office Location</h2>
+                <h2 className='mt-6 mb-2 font-semibold flex items-center'>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+</svg>
+</span> &nbsp;
+                    <span>Office Location</span>
+                </h2>
                 <p className="text-[14px] text-[#7d8590] mb-6 ">B15/6 step one estate, dorkashi crescent, FCT Abuja</p>
               </div>
             <div className='text-[#7d8590]'>
@@ -78,15 +85,6 @@ const Footer = () => {
             </li>
             <li className='mr-4'>
               <a href=""><img src="https://github.githubassets.com/images/modules/site/icons/footer/linkedin.svg" height="18" width="22" className="d-block" loading="lazy" decoding="async" alt="Twitter icon" /></a>
-            </li>
-            <li className='mr-4'>
-              <a href=""><img src="https://github.githubassets.com/images/modules/site/icons/footer/youtube.svg" height="18" width="22" className="d-block" loading="lazy" decoding="async" alt="Twitter icon" /></a>
-            </li>
-            <li className='mr-4'>
-              <a href=""><img src="https://github.githubassets.com/images/modules/site/icons/footer/twitch.svg" height="18" width="22" className="d-block" loading="lazy" decoding="async" alt="Twitter icon" /></a>
-            </li>
-            <li className='mr-4'>
-              <a href=""><img src="https://github.githubassets.com/images/modules/site/icons/footer/tiktok.svg" height="18" width="22" className="d-block" loading="lazy" decoding="async" alt="Twitter icon" /></a>
             </li>
             <li>
               <a href=""><img src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg" height="18" width="22" className="d-block" loading="lazy" decoding="async" alt="Twitter icon" /></a>
