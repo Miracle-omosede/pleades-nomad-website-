@@ -24,8 +24,8 @@ const Productivity = (props) => {
             <div onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} className='md:w-10/12 mb-24'>
                 <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.4, duration:0.3}} viewport={{once:false}} className="text-[20px] md:text-2xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '200ms'}}>Software Solutions</motion.div>  
                 <motion.h3 initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.5,duration:0.3}} viewport={{once:false}} className="text-[28px] md:text-[40px] max-md:leading-8 max-lg:leading-10 lg:text-5xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '300ms'}}>
-                    <span className="text-[#7ee787]">Tailored</span>
-                    software for optimal performance.
+                    <span className="text-[#7ee787]">Cutting Edge Software Solutions </span>
+                    that are innovative and customized to meet your exact requirements.
                 </motion.h3>
             </div>
         </div>
