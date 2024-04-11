@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+"use client"
+import React, { useState, useContext } from 'react';
 import { motion } from 'framer-motion';
+import { CursorContext } from '../CursorContext'
 
 const Discount = () => {
   const [hovered, setHovered] = useState(false);
@@ -20,7 +22,7 @@ const Discount = () => {
     show: { opacity: 1, y: 0 },
   };
 
-
+  const { mouseEnterHandler, mouseLeaveHandler } = useContext( CursorContext );
   return (
     <div className='flex relative md:pl-10'>
       <img
@@ -86,24 +88,29 @@ const Discount = () => {
               className=' text-4xl text-white font-bold'
               
             >
-              <motion.span variants={item}>I</motion.span>
+              <motion.span variants={item}>u</motion.span>
               <motion.span variants={item}>n</motion.span>
-              <motion.span variants={item}>n</motion.span>
+              <motion.span variants={item}>l</motion.span>
               <motion.span variants={item}>o</motion.span>
-              <motion.span variants={item}>v</motion.span>
-              <motion.span variants={item}>a</motion.span>
-              <motion.span variants={item}>t</motion.span>
-              <motion.span variants={item}>i</motion.span>
-              <motion.span variants={item}>v</motion.span>
-              <motion.span variants={item}>e</motion.span>
-              <motion.span variants={item}></motion.span>
-              <motion.span variants={item}>I</motion.span>
-              <motion.span variants={item}>n</motion.span>
+              <motion.span variants={item}>c</motion.span>
+              <motion.span variants={item}>k</motion.span>
+              <motion.span variants={item}> </motion.span>
+              <motion.span variants={item}>y</motion.span>
+              <motion.span variants={item}>o</motion.span>
+              <motion.span variants={item}>u</motion.span>
+              <motion.span variants={item}>r</motion.span>
+              <motion.span variants={item}> </motion.span>
               <motion.span variants={item}>s</motion.span>
-              <motion.span variants={item}>i</motion.span>
-              <motion.span variants={item}>g</motion.span>
-              <motion.span variants={item}>h</motion.span>
-              <motion.span variants={item}>t</motion.span>
+              <motion.span variants={item}>u</motion.span>
+              <motion.span variants={item}>p</motion.span>
+              <motion.span variants={item}>e</motion.span>
+              <motion.span variants={item}>r</motion.span>
+              <motion.span variants={item}>p</motion.span>
+              <motion.span variants={item}>o</motion.span>
+              <motion.span variants={item}>w</motion.span>
+              <motion.span variants={item}>e</motion.span>
+              <motion.span variants={item}>r</motion.span>
+              <motion.span variants={item}>s</motion.span>
             </motion.p>
           </motion.div>
         </div>
@@ -111,13 +118,13 @@ const Discount = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: 'tween', duration: 0.3 }}
-              className='md:pr-6'
+              className='md:pr-6' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} 
             >
               <h2 className='mb-4 text-2xl max-lg:text-[20px] max-md:w-10/12 lg:w-full w-full text-[#7d8590]'>
                 <span className='font-semibold text-white'>
-                Unlock the power
+                Unlock the power by
                 </span>{' '}
-                of data science in your operations.
+                 letting us navigate the data landscape and unlock the transformative potential within your business.
               </h2>
               <a
                 onMouseEnter={() => setHovered(true)}
@@ -188,7 +195,7 @@ const Discount = () => {
           className='mb-10 md:mb-32 pb-4 '
         >
           <div className='py-4 text-left'>
-            <div className='z-[1] inline-block rounded-full px-2 border-2 border-[#ffc2b2] relative font-medium bg-gradient-to-r from-[#ffa28b] to-[#ffc2b2] bg-clip-text text-transparent'>
+            <div className='z-[1] inline-block rounded-full px-2 border-2 border-[#ffc2b2] relative font-medium bg-gradient-to-r from-[#ffa28b] to-[#ffc2b2] bg-clip-text text-transparent' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} >
               <span className='font-semibold text-[12px]'>Insightful analysis</span>
             </div>
             <h3 className='text-[#ffa28b] mb-2 mt-3 lg:text-6xl md:text-5xl text-3xl font-medium'>

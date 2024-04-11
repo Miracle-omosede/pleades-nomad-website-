@@ -9,6 +9,7 @@ import { useContext } from "react";
 import {motion} from "framer-motion";
 import Security from "@/components/Security/Security";
 import Globe from "@/components/Footer/Globe";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   const{ cursorVariants, cursorBG } = useContext( CursorContext );
@@ -43,6 +44,8 @@ export default function Home() {
       {/* cursor pointer animation */}
       <motion.div variants={cursorVariants}
       animate={cursorBG} className="w-[32px] h-[32px] bg-[red] fixed top-0 left-0 pointer-events-none z-50 rounded-full"></motion.div>
+
+      <Footer/>
     </div>
   );
 }

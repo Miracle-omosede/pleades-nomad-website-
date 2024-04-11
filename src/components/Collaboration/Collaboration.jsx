@@ -39,20 +39,20 @@ const Collaboration = () => {
                   </svg>
                     <span className="absolute left-0 top-0 h-full w-full home-campaign-glowing-icon-glow-2 z-3"></span>
                 </motion.div>
-                <motion.div initial={{height:0}} whileInView={{height:'100%'}} transition={{delay:0.8}}  className=" h-full w-[3px] mt-7 rounded-md bg-gradient-to-b from-[#ffd6cc] via-[#ec6547] to-transparent" ></motion.div>
+                <motion.div initial={{height:0}} whileInView={{height:'100%'}} transition={{delay:0.8}}  className=" h-full w-[3px] mt-7 rounded-md bg-gradient-to-b from-[#ffd6cc] via-[rgb(236,101,71)] to-transparent" ></motion.div>
             </div>
             <motion.div initial={{opacity:0, x:-30}} whileInView={{opacity:1, x:0}} transition={{delay:0.6, type:'tween'}} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}  className='md:w-10/12 mb-24'>
-                <h2 className="text-[20px] md:text-2xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '200ms'}}>Data Science</h2>  
+                <h2 className="text-[20px] md:text-2xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '200ms'}}>Harness the Power of Data Science</h2>  
                 <h3 className="text-[28px] md:text-[40px] max-md:leading-8 max-lg:leading-10 lg:text-5xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '300ms'}}>
-                    <span className="text-[#ffa28b]">Transforming</span>
-                    data into actionable insights for your success.
+                    <span className="text-[#ffa28b]"> At Pleiades Technologies, we turn data into practical insights. </span> 
+                    Our team of data science experts recognizes the significant benefits that data can bring to your operations.
                 </h3>
             </motion.div>
         </div>
         <div className='flex justify-between md:space-x-10 max-md:flex-col'>
                 <HoverCard backgroundColor='#7ee787' direction='flex-row' left='0'>
-                    <div className='md:flex flex-col flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32 '>
-                        <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>Empowering</span>  businesses with data-driven strategies.</p>
+                    <div className='md:flex flex-col flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32'  onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} >
+                        <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>By analysing your data from various angles, </span>  we uncover concealed patterns, trends, and connections that can give you a competitive advantage in your field.</p>
                         <div>
                             <a onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} href="" className=' md:text-xl text-white font-semibold inline-block'>
                             Learn More 
@@ -84,8 +84,8 @@ const Collaboration = () => {
         <Discount />
       <div className='flex md:pl-7 space-x-3 md:space-x-10'>
       <HoverCard backgroundColor='#ffa28b' direction='' left=''>
-          <div className='md:flex flex-col md:space-y-20 flex-1 py-20 p-10  justify-between'>
-              <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-medium'>Our Team</span> of experts delivering excellence.</p>
+          <div className='md:flex flex-col md:space-y-20 flex-1 py-20 p-10  justify-between' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} >
+              <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-medium'>The Pleiades Technologies team is driven by values of honesty and putting customers first</span> We focus on truly understanding our clients needs and collaborating closely with them to create customized solutions that go above and beyond their expectations.  </p>
               <div>
                 <a onMouseEnter={() => setHovered2(true)} onMouseLeave={() => setHovered2(false)} href="" className='py-1 inline-block text-xl text-white font-semibold'>
                 Meet Us
@@ -133,7 +133,7 @@ const Collaboration = () => {
                               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
                                   <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
                               </svg>
-                              <span className="Button-label text-[#c9d1d9]">Snr SWE</span>
+                              <span className="Button-label text-[#c9d1d9]">SWE</span>
                             </span>
                         </button>
                       </a>
@@ -155,7 +155,7 @@ const Collaboration = () => {
                   <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
                       <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
                         <img alt="Homebrew avatar" width="96" height="96" className=" rounded-md" loading="lazy" decoding="async" src="https://miracle.sirv.com/pleiades-assets/team2.png" />
-                        <div className="text-[#7d8590] my-2">Mr Ransom</div>
+                        <div className="text-[#7d8590] my-2">Ransom</div>
                         <button type="button" className=' bg-[#21262d] rounded-md '>
                             <span className='flex items-center justify-between px-2 py-1 space-x-2'>
                               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
@@ -169,7 +169,7 @@ const Collaboration = () => {
                   <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
                       <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
                         <img alt="Homebrew avatar" width="96" height="96" className="rounded-md" loading="lazy" decoding="async" src="https://miracle.sirv.com/pleiades-assets/user4.png" />
-                        <div className="text-[#7d8590] my-2">Joel O</div>
+                        <div className="text-[#7d8590] my-2">Joel</div>
                         <button type="button" className=' bg-[#21262d] rounded-md '>
                             <span className='flex items-center justify-between px-2 py-1 space-x-2'>
                               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
@@ -183,13 +183,13 @@ const Collaboration = () => {
                   <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
                       <a href="" target='_blank' className='rounded-md bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
                         <img alt="Homebrew avatar" width="96" height="96" className="rounded-md" loading="lazy" decoding="async" src="https://miracle.sirv.com/pleiades-assets/team5.png" />
-                        <div className="text-[#7d8590] my-2">Nikema</div>
+                        <div className="text-[#7d8590] my-2">Nneka</div>
                         <button type="button" className=' bg-[#21262d] rounded-md '>
                             <span className='flex items-center justify-between px-2 py-1 space-x-2'>
                               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
                                   <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
                               </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                              <span className="Button-label text-[#c9d1d9]">HR</span>
                             </span>
                         </button>
                       </a>
@@ -197,13 +197,13 @@ const Collaboration = () => {
                   <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
                       <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
                         <img alt="Homebrew avatar" width="96" height="96" className="rounded-md" loading="lazy" decoding="async" src="https://miracle.sirv.com/pleiades-assets/team1.png" />
-                        <div className="text-[#7d8590] my-2">sindresorhus</div>
+                        <div className="text-[#7d8590] my-2">Jairus</div>
                         <button type="button" className=' bg-[#21262d] rounded-md '>
                             <span className='flex items-center justify-between px-2 py-1 space-x-2'>
                               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
                                   <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
                               </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                              <span className="Button-label text-[#c9d1d9]">COO</span>
                             </span>
                         </button>
                       </a>
@@ -211,13 +211,13 @@ const Collaboration = () => {
                   <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
                       <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
                         <img alt="Homebrew avatar" width="96" height="96" className="rounded-md" loading="lazy" decoding="async" src="https://miracle.sirv.com/pleiades-assets/team5.png" />
-                        <div className="text-[#7d8590] my-2">ESLint</div>
+                        <div className="text-[#7d8590] my-2">Kayla</div>
                         <button type="button" className=' bg-[#21262d] rounded-md '>
                             <span className='flex items-center justify-between px-2 py-1 space-x-2'>
                               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
                                   <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
                               </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                              <span className="Button-label text-[#c9d1d9]">CSS</span>
                             </span>
                         </button>
                       </a>

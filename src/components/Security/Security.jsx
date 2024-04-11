@@ -59,7 +59,7 @@ const Security = () => {
         </div>
         <div className='flex flex-col md:flex-row gap-10 '>
                 <HoverCard backgroundColor = '#939aff' direction='flex-row' left='-400px'>
-                    <div className='md:flex flex-col  flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32 '>
+                    <div className='md:flex flex-col  flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32 ' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
                         <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>Cutting-Edge</span>Developments</p>
                         <div>
                             <a onMouseEnter={() => setHovered2(true)} onMouseLeave={() => setHovered2(false)} href="" className='py-1 inline-block text-xl text-white font-semibold'>

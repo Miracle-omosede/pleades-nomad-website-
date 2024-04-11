@@ -1,8 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import {motion} from "framer-motion"
+import { CursorContext } from '../CursorContext'
+
 
 const Projects = () => {
-    const [hovered, setHovered] = useState(false)
+    const [hovered, setHovered] = useState(false);
+    const { mouseEnterHandler, mouseLeaveHandler } = useContext( CursorContext );
   return (
     <div className='flex relative md:pl-10'>
     <img alt="" aria-hidden="true" width="2712" height="2712" className="absolute top-0 right-0 h-auto pointer-events-none" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp" />
@@ -28,7 +31,7 @@ const Projects = () => {
     <div className='lg:pl-24 md:pl-16 pl-6'>
         <div className='flex max-md:flex-col-reverse my-8 items-center lg:gap-x-5 sm:my-12 md:my-16 pb-6 md:pb-20 md:flex-row'>
             <div className='py-4 mb-2 w-full'>
-                <motion.div initial={{opacity:0, x:30}} whileInView={{opacity:1, x:0}} transition={{type:'tween', duration:0.3}} className='md:pr-6'>
+                <motion.div initial={{opacity:0, x:30}} whileInView={{opacity:1, x:0}} transition={{type:'tween', duration:0.3}} className='md:pr-6' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} >
                     <h2 className="mb-4 text-2xl max-lg:text-[20px] max-md:w-10/12 lg:w-full w-full text-[#7d8590]"><span className='font-semibold text-white'>Transforming businesses with state-of-the-art technologies and groundbreaking AI solutions.</span>  Explore our work in artificial intelligence and its impact on diverse industries.</h2> 
                     <a onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} href="" className='py-1 inline-block text-xl text-white font-semibold'>
                     Discover More
@@ -49,7 +52,7 @@ const Projects = () => {
         </div>
         <motion.div initial={{opacity:0, x:-30}} whileInView={{opacity:1, x:0}} transition={{type:'tween', duration:0.3, delay:0.2}} className='mb-10 md:mb-32 pb-4 '>
             <div className='py-4 text-left'>
-                <div className='z-[1] inline-block rounded-full px-2 border-2 border-[#abb4ff] relative font-medium bg-gradient-to-r from-[#939aff] to-[#abb4ff] bg-clip-text text-transparent'>
+                <div className='z-[1] inline-block rounded-full px-2 border-2 border-[#abb4ff] relative font-medium bg-gradient-to-r from-[#939aff] to-[#abb4ff] bg-clip-text text-transparent' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} >
                     <span className='font-semibold text-[12px]'>With a Track Record</span>
                 </div>
                 <h3 className="text-[#939aff] mb-2 mt-3 lg:text-6xl md:text-5xl text-3xl font-medium">Completed over 100 projects globally in various fields.</h3>
