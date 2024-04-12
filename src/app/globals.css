@@ -8,11 +8,12 @@
 
 body{
   position: relative;
-  background-color: #0C1015;
+  /* background-color: #0C1015; */
   font-size: 15px;
+  color: #0C1015;
 }
 
-html{  scroll-behavior: smooth;}
+html{  scroll-behavior: smooth; color: black;}
 
 ::-webkit-scrollbar {
   width: 0;

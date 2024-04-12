@@ -21,9 +21,9 @@ export default function Home() {
 
       <div>
         <div className="overflow-x-hidden">
-          <div className="relative h-screen w-full">
-            <img className="absolute md:h-[150vh] h-[100vh]  w-full object-cover md:-top-[480px] -top-0  transiton ease-in duration-200  image" width="4377" src="https://miracle.sirv.com/pleiades-assets/hero-bg.jpg" alt="sun-image"/>
-            <div className="hero-image-overlay"> </div>
+          <div className="relative h-screen w-full text-black">
+            {/* <img className="absolute md:h-[150vh] h-[100vh]  w-full object-cover md:-top-[480px] -top-0  transiton ease-in duration-200  image" width="4377" src="https://miracle.sirv.com/pleiades-assets/hero-bg.jpg" alt="sun-image"/> */}
+            {/* <div className="hero-image-overlay"> </div> */}
             <Navbar/>
             <Hero/>
           
@@ -42,8 +42,8 @@ export default function Home() {
         </div>
       </div>
       {/* cursor pointer animation */}
-      <motion.div variants={cursorVariants}
-      animate={cursorBG} className="w-[32px] h-[32px] bg-[red] fixed top-0 left-0 pointer-events-none z-50 rounded-full"></motion.div>
+      {/* <motion.div variants={cursorVariants}
+      animate={cursorBG} className="w-[32px] h-[32px] bg-[red] fixed top-0 left-0 pointer-events-none z-50 rounded-full"></motion.div> */}
 
       <Footer/>
     </div>
