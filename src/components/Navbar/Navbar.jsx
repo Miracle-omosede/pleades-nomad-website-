@@ -23,10 +23,10 @@ const Navbar = () => {
                         <img src='https://miracle.sirv.com/pleiades-assets/blue-white-pleiades-logo.png' className='w-[40%]' />
                     </a>
                     <button onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} type='button' className='lg:hidden block'  onClick={() => setShowNav(!showNav)}>
-                        <div className={`w-[23px] h-[2px] transition ease-in duration-150 bg-white mb-1 ${showNav ? "rotate-45 mb-0 translate-y-[5px]" : "rotate-0 mb-1"}`}></div>
-                        <div className={`w-[23px] h-[2px] transition ease-in duration-150 bg-white mb-1 
+                        <div className={`w-[23px] h-[2px] transition ease-in duration-150 bg-black mb-1 ${showNav ? "rotate-45 mb-0 translate-y-[5px]" : "rotate-0 mb-1"}`}></div>
+                        <div className={`w-[23px] h-[2px] transition ease-in duration-150 bg-black mb-1 
                         ${ showNav ? "hidden mb-0" : "mb-1"}`}></div>
-                        <div className={`w-[23px] h-[2px] transition ease-in duration-150 bg-white ${showNav ? "-rotate-45 mb-0": "rotate-0"}`}></div>
+                        <div className={`w-[23px] h-[2px] transition ease-in duration-150 bg-black ${showNav ? "-rotate-45 mb-0": "rotate-0"}`}></div>
                     </button>
                 </div>
 
