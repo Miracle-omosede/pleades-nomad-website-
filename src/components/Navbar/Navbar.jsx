@@ -20,7 +20,7 @@ const Navbar = () => {
                 <div className='flex justify-between items-center max-lg:w-full'>
                     {/* ---i used delta quad as the place holder--- */}
                     <a href="www.deltaquad.com" className='cursor-pointer text-[1.5rem] font-semibold uppercase flex flex-col'>
-                        Logo
+                        <img src='https://miracle.sirv.com/pleiades-assets/blue-white-pleiades-logo.png' className='w-[40%]' />
                     </a>
                     <button onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} type='button' className='lg:hidden block'  onClick={() => setShowNav(!showNav)}>
                         <div className={`w-[23px] h-[2px] transition ease-in duration-150 bg-white mb-1 ${showNav ? "rotate-45 mb-0 translate-y-[5px]" : "rotate-0 mb-1"}`}></div>
