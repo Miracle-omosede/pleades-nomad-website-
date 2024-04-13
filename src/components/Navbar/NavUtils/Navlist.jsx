@@ -32,7 +32,7 @@ const Navlist = ({ main, submain, path, path2 }) => {
       >
         <div
           className={`font-semibold transition ease-in duration-100 text-[14px] ${
-            focus ? "text-blue-500" : "text-white"
+            focus ? "text-blue-500" : "text-black"
           } text-base leading-5`}
         >
           {main}

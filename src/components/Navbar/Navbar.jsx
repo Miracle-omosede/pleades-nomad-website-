@@ -5,6 +5,7 @@ import ProductNav from "../Navbar/ProductNav"
 import SolutionNav from './SolutionNav'
 
 import { CursorContext } from '../CursorContext'
+import Link from 'next/link'
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false)
@@ -32,31 +33,39 @@ const Navbar = () => {
 
                 <div className={`flex max-lg:absolute transition ease-in md:w-[820px] w-full duration-200 top-20 z-40 ${showNav ? "max-lg:translate-x-0 max-lg:scale-100" : "max-lg:max-h-0 max-lg:scale-y-50 max-lg:translate-y-1/4" }`}>
 
-                    <div className='flex max-lg:flex-col lg:items-center max-sm:w-10/12 max-sm:mx-auto sm:ml-auto max-lg:w-[320px] lg:w-full max-lg:max-h-[500px] overflow-y-auto lg:mb-0 max-lg:bg-white max-lg:rounded-lg lg:justify-between'>
+                    <div className='flex max-lg:flex-col lg:items-center max-sm:w-10/12 max-sm:mx-auto sm:ml-auto max-lg:w-[320px] lg:w-full max-lg:max-h-[500px] overflow-y-auto lg:mb-0 max-lg:bg-white max-lg:rounded-lg lg:justify-between md:shadow-none shadow-xl'>
                         <nav className='mt-0 px-3 lg:px-6 text-[15.5px] mb-0 max-lg:py-10 max-lg:px-5'>
                             <ul className='flex lg:items-center lg:space-x-5 max-lg:flex-col max-lg:text-neutral-700 max-lg:text-xl 
                             max-lg:font-medium  font-semibold tracking-wide max-lg:space-y-6 max-lg:h-auto overflow-y-auto'>
                                 <li className='uppercase'>
+                                    <Link href="./">
                                     <span>
-                                        <a href='#'>Home</a>
+                                        <a>Home</a>
                                     </span>
+                                    </Link>
                                 </li>
                                 <li  className='uppercase'>
+                                    <Link href="./about">
                                     <span>
-                                        <a href='#'>About Us</a>
+                                        <a>About Us</a>
                                     </span>
+                                    </Link>
                                 </li>
                                 <li  className='uppercase'>
+                                    <Link href="./team">
                                     <span>
-                                        <a href='#'>Team</a>
+                                        <a>Team</a>
                                     </span>
+                                    </Link>
                                 </li>
                                 <ProductNav/>
                                 {/* <SolutionNav/> */}
                                 <li  className='uppercase'>
+                                    <Link href="./contact" >
                                     <span>
-                                        <a href='#'>Contact Us</a>
+                                        <a>Contact Us</a>
                                     </span>
+                                    </Link>
                                 </li>
                             </ul>
                         </nav>
