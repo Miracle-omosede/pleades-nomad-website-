@@ -5,7 +5,7 @@ import CursorProvider from "@/components/CursorContext";
 
 export const metadata = {
   title: "Pleiades Inc",
-  description: "Pleiades Technologies Inc is an AI/Software research and development company based in Nigeria. It specializes in creating innovative AI solutions that cater to various industries",
+  description: "Pleiades Technologies Inc is an AI Software research and development company based in Nigeria. It specializes in creating innovative AI solutions that cater to various industries",
 };
 
 export default function RootLayout({ children }) {
