@@ -91,6 +91,10 @@ html{  scroll-behavior: smooth; color: black;}
   filter: blur(20px);
 }
 
+.home-campaign-glowing-icon-glow-z {
+  background-color: #f7d033;
+  filter: blur(20px);
+}
 
 .home-campaign-git-line {
   background: linear-gradient(#56d364, #2ea043, var(--color-canvas-default));
