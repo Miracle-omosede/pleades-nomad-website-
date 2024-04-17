@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='mb-12 px-2'>
               {/* pleiades Logo */}
               <a href="/" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to home&quot;,&quot;label&quot;:&quot;text:home&quot;}" className="color-fg-default text-black text-4xl d-inline-block" aria-label="Go to GitHub homepage">
-              <img src='https://miracle.sirv.com/pleiades-assets/Modern%20Minimal%20Technology%20Logo(1)%20copy.png' className='w-[50%]' />
+              <img src='https://miracle.sirv.com/pleiades-assets/blue-white-pleiades-logo.png' className='w-[50%]' />
               </a>
               <div className='text-black'  onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} >
                 <h2 className='mt-6 font-semibold'>Subscribe to our newsletter</h2>
