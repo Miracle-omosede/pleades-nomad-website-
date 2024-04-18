@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 import Navbar from '@/components/Navbar/Navbar';
 import ContactCard from './ContactCard';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
@@ -18,6 +19,21 @@ const Contact = () => {
             {/* cards */}
             <div>
                 <ContactCard/>
+            </div>
+
+            <div>
+                <div>
+                <div className='flex items-center justify-center flex-col'>
+                <h1 className='font-roboto font-[800] text-4xl'>Message Us</h1>
+                <span className='font-xl text-gray-400 font-semibold text-center'>
+                    We&apos;ll get back to you<br/> within 24 hours.
+                </span>
+            </div>  
+                </div>
+
+                <div>
+                    <ContactForm/>
+                </div>
             </div>
     </div>
     </>
