@@ -23,10 +23,10 @@ const Contact = () => {
 
             <div>
                 <div>
-                <div className='flex items-center justify-center flex-col'>
+                <div className='flex items-center justify-center flex-col gap-2'>
                 <h1 className='font-roboto font-[800] text-4xl'>Message Us</h1>
                 <span className='font-xl text-gray-400 font-semibold text-center'>
-                    We&apos;ll get back to you<br/> within 24 hours.
+                    We&apos;ll get back to you within 24 hours.
                 </span>
             </div>  
                 </div>

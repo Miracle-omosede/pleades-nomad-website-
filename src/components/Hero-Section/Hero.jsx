@@ -20,9 +20,9 @@ const Hero = () => {
             <motion.div initial={{ opacity: 0, y: '-50%'}} animate={{ opacity: 1, y: 0}} exit={{ opacity: 0, y: '-50%'}} className= 'absolute pt-32 mt-28 max-md:px-4 ml-4 md:ml-12'>
                 <motion.h1 initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.5,duration:0.3}} viewport={{once:false}}   onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} className="md:mt-24 lg:mt-28 sm:mt-10 relative z-2 text-[18px] md:text-[px] max-sm:leading-[60px] max-md:leading-[80px] lg:text-[25px] font-normal text-black">Pioneering technological</motion.h1>
                 <motion.h1  onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}  initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.5,duration:0.3}} viewport={{once:false}}  className="md:mt-0 lg:mt-0 sm:mt-0  mt-0  relative z-2 max-md:mb-5 text-[48px] md:text-[72px] 
-                max-sm:leading-[60px] max-md:leading-[90px] uppercase lg:text-[80px] tracking-widest font-[800] text-black">Growth</motion.h1>
+                max-sm:leading-[60px] max-md:leading-[90px] uppercase lg:text-[80px] tracking-widest font-[800] text-black">Innovate</motion.h1>
                 <motion.p   onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}  initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.5,duration:0.3}} viewport={{once:false}} className=" font-[500] relative z-1 text-[19px] md:text-[28px]  lg:text-[22px] leading-[30px] md:leading-[36px] lg:leading-[30px] mb-5 md:mb-12 md:10/12 lg:w-8/12 text-black">
-                we&apos;re not just a technology company, we&apos;re dedicated to shaping the future through innovation. 
+                We are a leading software development company with a relentless commitment to excellence. we have earned a reputation for delivering high-quality, scalable, and reliable software solutions that exceed our clients&apos; expectations
                 </motion.p>
                 <div className='flex lg:w-11/12 max-md:flex-col '  onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} >
                 <a onMouseEnter={() => setHovered1(true)} onMouseLeave={() => setHovered1(false)} href="#" className='flex items-center w-full md:w-auto justify-center text-[16px] py-3 px-5 max-md:mt-4 rounded-md border-[#ae88f9] border-[1.5px] text-black'>
