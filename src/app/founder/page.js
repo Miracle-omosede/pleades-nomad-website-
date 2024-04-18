@@ -1,11 +1,9 @@
 "use client"
+import Navbar from '@/components/Navbar/Navbar'
+import HoverCard from '@/components/Productivity/HoverCard'
 import React from 'react'
-import { motion } from "framer-motion"
-import Navbar from '@/components/Navbar/Navbar';
-import HoverCard from '@/components/Productivity/HoverCard';
-import Link from 'next/link';
 
-const About = () => {
+const Team = () => {
   return (
     <>
         <Navbar/>
@@ -22,17 +20,16 @@ const About = () => {
             <div className=" h-full w-[3px] mt-7 rounded-md bg-gradient-to-b from-[#abb4ff] via-[#797ef9] to-transparent" ></div>
         </div>
         <div  initial={{opacity:0, x:-30}} whileInView={{opacity:1, x:0}} transition={{delay:0.6, type:'tween'}} className='md:w-10/12 mb-24'>
-            <h2 className="text-[20px] md:text-2xl mb-7  text-black js-build-in-item build-in-slideX-left build-in-animate font-bold" style={{transitionDelay: '200ms'}}>About Us</h2>  
+            <h2 className="text-[20px] md:text-2xl capitalize mb-7  text-black js-build-in-item build-in-slideX-left build-in-animate font-bold" style={{transitionDelay: '200ms'}}>Meet our founder</h2>  
             <h3 className="text-[28px] md:text-[40px] max-md:leading-8 max-lg:leading-10 lg:text-5xl mb-7 font-medium text-black js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '300ms'}}>
-                <p className="text-[#939aff]">Introducing Pleiades Technologies, </p>
-                where technological brilliance converges with innovation to reshape industries and redefine progress.
+                {/* <p className="text-[#939aff]">Introducing Pleiades Technologies, </p> */}
             </h3>
         </div>
     </div>
     <div>
-    <HoverCard backgroundColor = '#939aff' direction='flex-row' left='-400px'>
-                    <div className='md:flex flex-col  flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32 '>
-                        <p className=" text-sm md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-black font-semibold'>Established on October 29, 2021, our mantra—Innovate, Collaborate, Excel—is not just a slogan; it is our guiding principle.   </span>
+    <HoverCard className=" " direction='flex-row' left='-400px'>
+                    <div className='md:flex flex-col  flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32 founder-bg-image'>
+                        <p className=" text-sm md:text-2xl mb-6 font-medium text-[white]"><span className='text-white font-semibold'>Established on October 29, 2021, our mantra—Innovate, Collaborate, Excel—is not just a slogan; it is our guiding principle.   </span>
 
 At Pleiades, we transcend the traditional boundaries of technology, setting new standards that are not just cutting-edge but transformative. We don&apos;t just offer services; we craft tailored solutions that stand as the epitome of technological artistry. Every algorithm, every line of code, and every system developed is meticulously curated to reflect our commitment to exceptional quality.
 <br/>
@@ -47,15 +44,9 @@ With a focus on sustainability and innovation, we integrate the latest advanceme
 Our mission is to provide exceptional technological tools for industries, sectors, and governments, helping them achieve greater efficiency, productivity, and economic growth. We carefully analyze each client&apos;s needs through system studies, feasibility assessments, and business evaluations. This customized approach ensures that our solutions meet their specific requirements. We then define the project, create a conceptual design, and develop prototypes to prepare for developing and implementing tailored software solutions that go beyond expectations.
 <br/><br/>
 
-However, our efforts extend further. Pleiades disrupts the technology sector, questioning norms and envisioning new possibilities. Our solutions go beyond mere products; they serve as strategic assets, transforming operations and accelerating progress. We lead, and others follow—because, at Pleiades, we&apos;re not just delivering solutions; we&apos;re expanding the possibilities of technological excellence.
-<br/>
-<br/>
-Join us on a journey where innovation, collaboration, and excellence converge. Pleiades Technologies is more than a company; we are the architects of your future, the innovators of your experience, and the disruptors of the ordinary.
-<br/><br/>
-<span className='font-bold '>Mr Ramsey Matthew</span>
- </p><br/>
-                        <div>
-                        </div>
+
+ </p>
+ <span className='font-bold text-2xl italic text-white'>Mr Ramsey Matthew</span>
                     </div>
                 </HoverCard>
     </div>
@@ -64,4 +55,4 @@ Join us on a journey where innovation, collaboration, and excellence converge. P
   )
 }
 
-export default About;
+export default Team

@@ -196,3 +196,24 @@ html{  scroll-behavior: smooth; color: black;}
     transform: translateY(-20px);
   }
 }
+
+
+.founder-bg-image {
+  background-image: 
+      /* Add a linear gradient overlay to darken the background */
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      /* Specify the URL of the background image */
+      url('https://miracle.sirv.com/pleiades-assets/WhatsApp%20Image%202024-04-16%20at%2017.36.13_790d4472.jpg');
+  background-repeat: no-repeat;
+  background-size: 150%; /* Zoom in on the background image */
+  background-position: center right; /* Focus on the right side of the image */
+}
+
+/* Media query for mobile and tablet screens (up to 768px width) */
+@media (max-width: 768px) {
+  .founder-bg-image {
+      background-size: cover; /* Adjust background size to cover the entire element */
+      background-position: center right; 
+  }
+}
+

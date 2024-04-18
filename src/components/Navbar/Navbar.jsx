@@ -19,7 +19,7 @@ const Navbar = () => {
             justify-between
             max-lg:justify-between max-lg:flex-row-reverse mx-auto w-full'> 
                 <div className='flex justify-between items-center max-lg:w-full'>
-                    {/* ---i used delta quad as the place holder--- */}
+
                     <a href="./" className='cursor-pointer text-[1.5rem] font-semibold uppercase flex flex-col'>
                         <img src='https://miracle.sirv.com/pleiades-assets/blue-white-pleiades-logo.png' className='w-[35%]' />
                     </a>
@@ -52,9 +52,9 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li  className='uppercase'>
-                                    <Link href="./team">
+                                    <Link href="./founder">
                                     <span>
-                                        <a>Team</a>
+                                        <a>Founder</a>
                                     </span>
                                     </Link>
                                 </li>
